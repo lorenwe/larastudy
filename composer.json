@@ -1,0 +1,19 @@
+{
+    "name": "administrator/larastudy",
+    "authors": [
+        {
+            "name": "luozhongzhao",
+            "email": "1351207341@qq.com"
+        }
+    ],
+    "require": {
+        "illuminate/routing":"5.1.*",
+        "illuminate/events":"5.1.*"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
