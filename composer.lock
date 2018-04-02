@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d98ac75f1147debc6624c85efed49da8",
+    "content-hash": "6ab6516b524027aadce6b2187a06ef94",
     "packages": [
         {
             "name": "danielstjules/stringy",
@@ -320,6 +320,56 @@
             "time": "2015-12-30T20:19:08+00:00"
         },
         {
+            "name": "illuminate/filesystem",
+            "version": "v5.1.41",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/filesystem.git",
+                "reference": "f109f5fb12eef0211cdaff226bef51e18ec8c147"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/illuminate/filesystem/f109f5fb12eef0211cdaff226bef51e18ec8c147.zip",
+                "reference": "f109f5fb12eef0211cdaff226bef51e18ec8c147",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.1.*",
+                "illuminate/support": "5.1.*",
+                "php": ">=5.5.9",
+                "symfony/finder": "2.7.*"
+            },
+            "suggest": {
+                "league/flysystem": "Required to use the Flysystem local and FTP drivers (~1.0).",
+                "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (~1.0).",
+                "league/flysystem-rackspace": "Required to use the Flysystem Rackspace driver (~1.0)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Filesystem\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "The Illuminate Filesystem package.",
+            "homepage": "http://laravel.com",
+            "time": "2016-05-28T21:16:16+00:00"
+        },
+        {
             "name": "illuminate/http",
             "version": "v5.1.41",
             "source": {
@@ -569,6 +619,54 @@
             "time": "2016-06-11T16:44:59+00:00"
         },
         {
+            "name": "illuminate/view",
+            "version": "v5.1.41",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/view.git",
+                "reference": "8dc810083f5c0dc889757d62be65a7307d92a30b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/illuminate/view/8dc810083f5c0dc889757d62be65a7307d92a30b.zip",
+                "reference": "8dc810083f5c0dc889757d62be65a7307d92a30b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "5.1.*",
+                "illuminate/contracts": "5.1.*",
+                "illuminate/events": "5.1.*",
+                "illuminate/filesystem": "5.1.*",
+                "illuminate/support": "5.1.*",
+                "php": ">=5.5.9",
+                "symfony/debug": "2.7.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\View\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "The Illuminate View package.",
+            "homepage": "http://laravel.com",
+            "time": "2016-07-18T11:06:23+00:00"
+        },
+        {
             "name": "nesbot/carbon",
             "version": "1.25.0",
             "source": {
@@ -718,16 +816,16 @@
         },
         {
             "name": "symfony/debug",
-            "version": "v2.8.36",
+            "version": "v2.7.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "f693ba88189b6384370c13d114cfd010649c31af"
+                "reference": "6a76089f75da34f474235a610438ae9cadd948c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/debug/f693ba88189b6384370c13d114cfd010649c31af.zip",
-                "reference": "f693ba88189b6384370c13d114cfd010649c31af",
+                "url": "https://files.phpcomposer.com/files/symfony/debug/6a76089f75da34f474235a610438ae9cadd948c4.zip",
+                "reference": "6a76089f75da34f474235a610438ae9cadd948c4",
                 "shasum": ""
             },
             "require": {
@@ -738,13 +836,13 @@
                 "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
             },
             "require-dev": {
-                "symfony/class-loader": "~2.2|~3.0.0",
-                "symfony/http-kernel": "~2.3.24|~2.5.9|^2.6.2|~3.0.0"
+                "symfony/class-loader": "~2.2",
+                "symfony/http-kernel": "~2.3.24|~2.5.9|^2.6.2"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
@@ -771,7 +869,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2018-02-28T21:47:46+00:00"
+            "time": "2018-02-28T21:02:44+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
